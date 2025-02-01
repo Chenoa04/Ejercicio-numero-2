@@ -1,0 +1,11 @@
+Ejercicio #2
+def valor_de_pi(n):
+    pi = 0
+    for k in range(1, n + 1):
+        pi += ((-1) ** (k + 1)) / (2 * k - 1)
+    pi *= 4
+    return pi
+
+n = 200
+valor_pi = valor_de_pi(n)
+print(f"Valor aproximado de π con n={n}: {valor_pi}")
